@@ -1,4 +1,4 @@
-package org.example;
+package org.example.ch1;
 
 public class Apple {
     private int weight = 0;
@@ -23,5 +23,10 @@ public class Apple {
 
     public void setColor(String color) {
         this.color = color;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("Apple{color='%s', weight=%d}", color, weight);
     }
 }
